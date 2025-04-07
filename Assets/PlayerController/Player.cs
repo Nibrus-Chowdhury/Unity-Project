@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     InputAction jumpAction;
     InputAction lookAction;
     InputAction sprintAction;
+    InputAction interactAction;
 
     private void Awake()
     {
@@ -33,6 +34,7 @@ public class Player : MonoBehaviour
         jumpAction = playerInput.actions["Jump"];
         lookAction = playerInput.actions["Look"];
         sprintAction = playerInput.actions["Sprint"];
+        interactAction = playerInput.actions["Interact"];
     }
     void Start()
     {
